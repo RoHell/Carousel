@@ -9,10 +9,10 @@ body {
 
 #carousel {
 	width: 600px;
-	margin: 0;
+	margin: 0 auto;
 	position: relative;
 	top: calc(50vh - 150px);
-	overflow: visible;
+	overflow: hidden;
 }
 
 #carousel ul {
