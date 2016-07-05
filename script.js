@@ -1,29 +1,17 @@
-var span = $('span');
-
-span.each(function(index, element) {
-	if(index % 2 == 0 ) {
-		$(element).css('color', 'red');
-	};
+$(function() {
+	var carouselList = $("#carousel ul");
 });
 
-var paragraphs = $('p');
 
-paragraphs.each(function(index, element) {
-	var button = '<button class="btn" data-tmp="'+ index + '"> Baton '	+index+' </button>';
-	$(element).append(button);
+$(function changeSlide() {
+	setInterval(changeSlide, 3000);
+	carouselList.animate({marginLeft:-500}, 500, moveFirstSlide);
 });
 
-$('button').click(function() {
-	alert($(this).attr('data-tmp'));
 
-});
-
-$(".btn").css({
-	"color": "#ccc",
-	"background-color": "#000",
-	"padding": "5px",
-	"border-radius": "4px",
-	"position": "absolute",
-	"left": "70px",
-	"margin-top": "-5px"
+$(function moveFirstSlide() {
+	var firstItem = carouselList.find("li:first");
+	var lastItem = carouselList.find("li:last");
+	lastItem.after(firstItem);
+	carouselList.css({marginLeft:0});
 });
