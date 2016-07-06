@@ -7,7 +7,7 @@ body {
 	padding: 0;
 }
 
-#carousel {
+.carousel {
 	width: 600px;
 	margin: 0 auto;
 	position: relative;
@@ -15,15 +15,61 @@ body {
 	overflow: hidden;
 }
 
-#carousel ul {
+.carousel ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 	width: 3000px;
 }
 
-#carousel ul li {
+.carousel ul li {
 	float: left;
 	width: 600px;
 	height: 300px;
+}
+
+.left, .right {
+	position: absolute;
+	top: 0;
+	width: 250px;
+	height: 300px;
+	background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0));
+	transition: background .5s ease-out;
+	cursor: pointer;
+}
+
+.left {
+	left: 0;
+}
+
+.right {
+	right: 0;
+}
+
+.left:hover {
+	background: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,0));
+}
+
+.right:hover {
+	background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.5));
+}
+
+.left:hover .fa-chevron-left, .right:hover .fa-chevron-right {
+	color: rgba(255, 255, 255, 1);
+}
+
+.fa-chevron-right, .fa-chevron-left {
+	position: absolute;
+	top: calc(150px - 20px);
+	font-size: 40px;
+	color: rgba(255, 255, 255, .5);
+	transition: .5s;	
+}
+
+.fa-chevron-left {
+	left: 20px;
+}
+
+.fa-chevron-right {
+	right: 20px;
 }
