@@ -15,14 +15,14 @@ body {
 	overflow: hidden;
 }
 
-.carousel ul {
+.carousel .gallery {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 	width: 3000px;
 }
 
-.carousel ul li {
+.carousel .gallery li {
 	float: left;
 	width: 600px;
 	height: 300px;
@@ -63,7 +63,7 @@ body {
 	top: calc(150px - 20px);
 	font-size: 40px;
 	color: rgba(255, 255, 255, .5);
-	transition: .5s;	
+	transition: .5s;
 }
 
 .fa-chevron-left {
@@ -72,4 +72,23 @@ body {
 
 .fa-chevron-right {
 	right: 20px;
+}
+
+.circle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style-type: circle;
+}
+
+.circle li {
+	font-size: 25px;
+	width: 10px;
+	height: 10px;
+	margin: 5px 5px;
+	cursor: pointer;
+}
+
+.disc {
+	list-style-type: disc;	
 }
