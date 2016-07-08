@@ -12,7 +12,7 @@ body {
 	margin: 0 auto;
 	position: relative;
 	top: calc(50vh - 150px);
-	overflow: visible;
+	overflow: hidden;
 }
 
 .carousel .gallery {
@@ -76,7 +76,6 @@ body {
 
 .circle {
 	display: flex;
-	align-items: center;
 	justify-content: center;
 	list-style-type: circle;
 }
