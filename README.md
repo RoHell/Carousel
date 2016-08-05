@@ -1,7 +1,7 @@
 # Carousel
 Project of picture slideshow with carousel functionality.
 
-![Carousel]()
+![Carousel](http://i.imgur.com/IpIBBEB.png?1)
 
 ## Installation
 1. Clone the repo: `git clone https://github.com/RoHell/Carousel.git`
